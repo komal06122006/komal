@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>pro10</title>
+    <style>
+        #banner{
+            background-color: rgba(70, 11, 4, 0.209) ;
+            color: rgb(68, 29, 2);
+            text-align: center;
+            height: 400px;
+            width:500px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            padding-top: 100px;
+            font-size: larger;
+            text-transform: capitalize;
+            border: 10px double rgb(68, 29, 2);;
+        }
+        button{
+            background-color:rgb(143, 125, 113); 
+            font-size: larger;
+            text-transform: capitalize;
+            border: 5px double rgb(68, 29, 2);
+        }
+        button:hover{
+            background-color:rgb(68, 29, 2);
+            color: aliceblue ;
+        }
+    </style>
+</head>
+<body>
+    <div id="banner">
+        <p id="str">Write a JavaScript program to reverse a given
+            string.</p>
+    <br><br><button class="button"value="Click Me"onclick="myfunction()">Click Me</button>
+
+    <script>
+        function myfunction()
+        {
+        let s = prompt("Enter Your String:");
+        const ans = s.split('').reverse().join('');
+       document.getElementById('str').innerHTML=(ans);
+        }
+     </script>
+</body>
+</html>
+

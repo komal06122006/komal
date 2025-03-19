@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <title>pro4</title>
+</head>
+
+<body>
+    <div id="banner">
+        <p id="KM">Write a JavaScript program to convert input
+            meters to kilometers.</p>
+    <br><br><button class="button"value="Click Me"onclick="myfunction()">Click Me</button>
+
+<script>
+        function myfunction(){
+        let n = prompt("Enter Your Number");
+        let count = 0;
+        if (n <= 1) {
+            document.write("Its not a Prime Number");
+        }
+        else {
+            for (let i = 1; i <= n; i++) {
+                if (n % i == 0) {
+                    document.write("Your Number=" + n % i + "<br>")
+                }
+            }
+        }
+        if (count > 2) {
+            document.write("This Is Not Prime Number=" + n);
+        }
+        else {
+            document.write("This Prime Number=" + n);
+        }
+    }
+    </script>
+</body>
+
+</html>

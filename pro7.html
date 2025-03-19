@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <style>
+    #banner{
+        background-color: rgb(226, 255, 119);
+        color: rgb(1, 13, 1);
+        text-align: center;
+    }
+   </style>
+    <title>pract 7</title>
+</head>
+
+<body>
+    <div id="banner">
+        <p id="KM">Write a JavaScript program to convert input
+            meters to kilometers.</p>
+    <br><br><button class="button"value="Click Me"onclick="myfunction()">Click Me</button></div>
+
+    <script>
+        function myfunction(){
+        var year = prompt("Enter a Year");
+
+        if (year % 4 == 0) {
+            document.getElementById('KM').innerHTML=(year + "  Is a Leap Year.");
+        }
+        else {
+            document.getElementById('KM').innerHTML=(year + "  Is Not a Leap Year.");
+        }
+    }
+    </script>
+</body>
+
+</html>
